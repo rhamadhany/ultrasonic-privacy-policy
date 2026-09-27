@@ -25,7 +25,7 @@
     <main class="container">
         <article class="doc">
             <h1>Privacy Policy</h1>
-            <p class="meta">Last updated: 25 September 2026</p>
+            <p class="meta">Last updated: 27 September 2026</p>
 
             <div class="callout callout-info">
                 <strong>Summary</strong>
@@ -33,8 +33,14 @@
                 We do not record, store, or transmit any audio. BNeoTech does
                 not operate its own servers — data collected through the App
                 is held by third-party services (Google AdMob, RevenueCat)
-                under their own privacy policies. We can help you exercise
-                your data rights by forwarding requests to those providers.
+                under their own privacy policies. For data we control directly
+                (RevenueCat subscriber records), we can delete it on your
+                request. For data controlled by Google (AdMob advertising ID,
+                Google Play purchase history), we provide step-by-step
+                instructions so you can submit the request directly to Google
+                — Google does not accept third-party deletion requests on
+                your behalf. See <a href="#data-deletion">Section 10.6 — Data
+                Deletion</a>.
             </div>
 
             <h2>1. Introduction</h2>
@@ -263,47 +269,73 @@
                 <li>Or use <strong>Settings &rarr; Data Management</strong> in the App to clear it selectively.</li>
             </ul>
 
-            <h3>10.3 Data held by third-party services</h3>
+            <h3>10.3 Data held by third-party services — who controls what</h3>
             <p>
-                Personal data collected through the App (such as your Android
-                Advertising ID, IP address, and purchase history) is stored on
-                infrastructure operated by:
+                Personal data collected through the App is processed by
+                third-party services. The table below shows which party can
+                actually act on a deletion request, based on each provider's
+                own policy and technical capability:
             </p>
-            <ul>
-                <li>
-                    <strong>Google AdMob</strong> — for advertising.
-                    You can manage or delete your Advertising ID in
-                    <strong>Android Settings &rarr; Google &rarr; Ads</strong>.
-                    For AdMob data requests, see
-                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
-                </li>
-                <li>
-                    <strong>RevenueCat</strong> — for subscription management.
-                    For data access or deletion requests, see
-                    <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>.
-                </li>
-                <li>
-                    <strong>Google Play Billing</strong> — for payment processing.
-                    See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
-                </li>
-            </ul>
-
-            <h3>10.4 How to submit a request</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Controller</th>
+                        <th>Who can delete?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Local presets, preferences, consent state</td>
+                        <td>You (device)</td>
+                        <td><strong>You</strong> — uninstall or in-app clear</td>
+                    </tr>
+                    <tr>
+                        <td>RevenueCat subscriber record<br>(anonymous app user ID, purchase history, last seen)</td>
+                        <td>BNeoTech <em>(as controller)</em> with RevenueCat as processor</td>
+                        <td><strong>BNeoTech</strong> can delete on your request</td>
+                    </tr>
+                    <tr>
+                        <td>Android Advertising ID + ad-serving data</td>
+                        <td>Google (AdMob)</td>
+                        <td><strong>You</strong> via Android settings</td>
+                    </tr>
+                    <tr>
+                        <td>Google Play purchase history</td>
+                        <td>Google (Play Billing)</td>
+                        <td><strong>You</strong> via Google Account</td>
+                    </tr>
+                    <tr>
+                        <td>Google Account activity / history</td>
+                        <td>Google</td>
+                        <td><strong>You</strong> via My Activity</td>
+                    </tr>
+                </tbody>
+            </table>
             <p>
-                To exercise any of your rights, contact us at
+                <strong>Important:</strong> BNeoTech cannot delete data held by
+                Google on your behalf. Google's policy only accepts deletion
+                requests directly from the account owner (you). We can delete
+                RevenueCat subscriber data because we are its data controller
+                under our agreement with RevenueCat.
+            </p>
+
+            <h3>10.4 How to submit a request to us</h3>
+            <p>
+                To exercise any of your rights regarding data we control
+                (RevenueCat subscriber records), contact us at
                 <a href="mailto:bneotech.id@gmail.com">bneotech.id@gmail.com</a>.
                 Please include:
             </p>
             <ul>
                 <li>The specific right you wish to exercise (access, deletion, etc.).</li>
-                <li>Any information that helps identify you (e.g., the approximate date of purchase for subscription inquiries).</li>
+                <li>The anonymous app user ID if you have it (RevenueCat assigns one per install). If you do not have it, we can locate your record using the approximate date of purchase / first use.</li>
             </ul>
             <p>
-                We will respond within 30 days. Where the request concerns data
-                held by a third-party provider, we will forward your request to
-                the relevant provider and inform you of the outcome. You also
-                have the right to contact those providers directly using the
-                links in section 10.3.
+                We will respond within 30 days (or sooner where required by
+                Indonesia's PDP Law or the GDPR). If you are located in the
+                EEA / UK / Switzerland and have a complaint, you may also
+                contact your local supervisory authority.
             </p>
 
             <h3>10.5 Deletion of local data</h3>
@@ -314,6 +346,85 @@
                 <li><strong>Uninstall the App</strong> — removes all locally stored presets, preferences, and consent state.</li>
                 <li><strong>In-App:</strong> Settings &rarr; Data Management &rarr; Clear All Saved Frequencies.</li>
                 <li><strong>In-App:</strong> Settings &rarr; Reset Safety Warning.</li>
+            </ul>
+
+            <h3 id="data-deletion">10.6 Data Deletion — Step-by-Step</h3>
+            <p>
+                This section is provided so you can exercise your deletion
+                rights without needing to contact us first. It also serves as
+                the data deletion reference required by Google Play's Data
+                Safety policy.
+            </p>
+
+            <h4>A. Local data (you delete directly)</h4>
+            <ol>
+                <li><strong>Uninstall the App</strong> — automatically removes all locally stored presets, preferences, and consent state.</li>
+                <li><strong>Or, in-app:</strong> <em>Settings &rarr; Data Management &rarr; Clear All Saved Frequencies</em> to delete only your saved frequency presets.</li>
+                <li><strong>Or, in-app:</strong> <em>Settings &rarr; Reset Safety Warning</em> to reset consent state.</li>
+            </ol>
+            <p class="muted">
+                These actions take effect immediately. No further step is required.
+            </p>
+
+            <h4>B. RevenueCat subscriber record (we delete on request)</h4>
+            <p>
+                RevenueCat stores an anonymous app user ID, subscription status,
+                last-seen time, and (for subscriptions) the Google Play purchase
+                token. BNeoTech can delete this record because we are its data
+                controller.
+            </p>
+            <ol>
+                <li>Email <a href="mailto:bneotech.id@gmail.com">bneotech.id@gmail.com</a> with subject line <strong>"Data Deletion Request"</strong>.</li>
+                <li>Include any of the following identifiers to help us locate your record:
+                    <ul>
+                        <li>The anonymous RevenueCat app user ID, if you know it (it appears in RevenueCat's diagnostics screen if available).</li>
+                        <li>Or the approximate date of purchase / first use.</li>
+                        <li>Or the Google Play order ID from your purchase receipt email.</li>
+                    </ul>
+                </li>
+                <li>We will delete your RevenueCat subscriber record within <strong>30 days</strong> of a verified request and confirm by email.</li>
+            </ol>
+
+            <h4>C. Google AdMob advertising data (you delete via Google)</h4>
+            <p>
+                Google AdMob associates ad-serving data with your Android
+                Advertising ID. BNeoTech cannot delete this data on your behalf
+                — only Google, acting on your direct request, can.
+            </p>
+            <ol>
+                <li>Open <strong>Android Settings &rarr; Privacy &rarr; Ads</strong> (or <strong>Settings &rarr; Google &rarr; Ads</strong> on older versions).</li>
+                <li>Tap <strong>Delete advertising ID</strong> to reset it. This disassociates future ad activity from your previous identifier.</li>
+                <li>Optionally, disable <strong>Ads personalization</strong> in the same screen.</li>
+                <li>To request deletion of data already associated with your Google Account (including historical ad-serving logs), use <a href="https://myaccount.google.com/deleteactivity" target="_blank" rel="noopener">Google My Activity</a>. Google's data-deletion policy applies.</li>
+            </ol>
+
+            <h4>D. Google Play purchase history (you delete via Google)</h4>
+            <p>
+                Purchase history is retained by Google Play under tax, legal,
+                and accounting obligations. BNeoTech cannot delete it.
+            </p>
+            <ol>
+                <li>Open <a href="https://myaccount.google.com/" target="_blank" rel="noopener">Google Account &rarr; Data &amp; privacy</a>.</li>
+                <li>Under <strong>"Data from apps and services you use"</strong>, find <strong>Google Play Store</strong>.</li>
+                <li>Follow Google's instructions. Note that Google Play may retain purchase records as required by applicable tax and consumer-protection law even after deletion from your account view.</li>
+            </ol>
+
+            <h4>E. Children's data</h4>
+            <p>
+                If you are a parent or guardian and believe your child has
+                provided personal data through the App, contact us at
+                <a href="mailto:bneotech.id@gmail.com">bneotech.id@gmail.com</a>
+                and we will delete any data we control within <strong>7 days</strong>
+                of a verified request, and we will advise you on how to submit
+                deletion requests to Google for data they control.
+            </p>
+
+            <h4>Response timeline</h4>
+            <ul>
+                <li>Local data: <strong>immediate</strong> (self-service, no request needed).</li>
+                <li>RevenueCat subscriber record: <strong>≤ 30 days</strong> from verified request.</li>
+                <li>Children's data: <strong>≤ 7 days</strong> from verified request.</li>
+                <li>Google-controlled data: subject to Google's own timelines — typically <strong>within 30 days</strong> after your direct request; some data is retained by Google for legal obligations.</li>
             </ul>
 
             <h2>11. Children's Privacy</h2>
